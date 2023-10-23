@@ -1,0 +1,327 @@
+@media screen and (max-width: 739px){
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    header {
+        display: grid;
+        justify-content: 1fr auto;
+        align-items: center;
+        padding: 20px;
+        background-color: #f0f0f0;
+    }
+    
+    .search-bar {
+        background-color: #ccc;
+        border-radius: 50px;
+        width: 80%;
+        margin: 20px auto;
+        padding: 10px;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr auto;
+    }
+    
+    .search-input {
+        border: none;
+        background: none;
+        width: 100%;
+        font-size: 16px;
+    }
+    
+    main {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+        justify-content: center;
+        position: relative;
+    }
+    
+    .product-inbasket{
+        width: 90%;
+        margin: 10px auto;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        border: 1px solid #ccc;
+        padding: 10px;
+    }
+    
+    nav {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* Fire like brede kolonner */
+        background-color: #333;
+        color: #fff;
+        padding: 10px 0;
+        font-size: 24px;
+        align-items: center;
+    }
+    
+    nav a {
+        text-decoration: none;
+        color: #fff;
+        margin: 0 10px;
+    }
+    
+    aside {
+        background-color: #ccc;
+        position: fixed;
+        bottom: 70px;
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    .price {
+        text-align: left;
+    }
+    
+    .price-label {
+        text-align: left;
+    }
+    
+    .price-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .checkout-box {
+        background-color: #666;
+        width: 80%;
+        text-align: center;
+        padding: 10px;
+        border-radius: 10px; /* Runde kanter */
+        margin: 0 auto;
+    }
+    
+    .checkout-text {
+        font-size: 24px;
+        color: #fff;
+    }
+    
+    .product-inbasket{
+        width: 90%;
+        margin: 10px auto;
+        display: flex;
+        align-items: center;
+        border: 1px solid #ccc;
+        padding: 10px;
+    }
+    
+    img {
+        max-width: 100px;
+        height: auto;
+    } 
+    
+    .small-img {
+        margin-right: 20px;
+    }
+    
+    article {
+        width: 60%;
+    }
+    
+    nav a {
+        text-decoration: none;
+        color: #fff;
+        margin: 0 10px;
+    }
+    
+    h1 {
+        font-size: 36px;
+        text-align: center;
+        margin: 20px 0;
+    }
+    
+    section {
+        margin-bottom: 20px;
+    }
+    
+    .product-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .product {
+        width: calc(50% - 20px);
+        margin: 10px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Midtstilt vertikalt */
+    }
+    
+    .product img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .product-description {
+        margin: 10px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .product-description h2 {
+        font-size: 18px;
+    }
+    
+    .product-description p {
+        margin: 5px 0;
+    }
+    
+    .bottom-menu {
+        background-color: #ccc;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding: 10px 0;
+    }
+    
+    .menu-icon {
+        font-size: 24px;
+    }
+    
+    a.menu-icon{
+        text-decoration: none;
+        outline: none;
+    }
+    
+    .image {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .image-container-desktop{
+        display: none;
+    }
+    
+    #search-box{
+        display: none;
+    }
+    
+    #logo{
+        display: none;
+    }
+    
+    #user-box{
+        display: none;
+    }
+    
+    #desktop-nav{
+        display: none;
+    }
+    
+    }
+    
+    @media screen and (min-width: 740){
+    
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        
+        .search-box {
+            flex: 1;
+            background-color: #ccc;
+            border-radius: 50px;
+            padding: 10px;
+            margin-right: 10px;
+        }
+        
+        .search-input {
+            border: none;
+            background: none;
+            width: 100%;
+            font-size: 16px;
+        }
+        
+        .logo {
+            flex: 1;
+            text-align: center;
+            font-size: 24px;
+        }
+        
+        .user-box {
+            display: flex;
+            align-items: center;
+        }
+        
+        .login-box, .register-box {
+            background-color: #ccc;
+            padding: 10px;
+            margin-right: 10px;
+        }
+        
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        
+        nav li {
+            margin: 0 10px;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+        }
+        
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #0f0;
+        }
+        
+        .image-container-desktop {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .main-image,
+        .side-image {
+            width: 50%;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+        }
+        
+        .main-image {
+            background-color: #008000;
+        }
+        
+        .side-image {
+            background-color: #333;
+        }
+    
+    }
